@@ -8,16 +8,16 @@ def mediax(x,y):
 a =  0
 
 while( a != 'fim'):
-    nome  = input("Digite seu nome: ")
+    nome  = str(input("Digite seu nome: "))
     idade = int(input("Digite sua idade: "))
     matricula = int(input("Digite sua matrícula: "))
     ano_de_curso = int(input("Digite seu ano de curso: "))
     nota1 = float(input("Digite sua primeira nota: "))
-    nota2 = float(input("Digite sua segunda nota: "))
     if nota1 > 10:
         print("Por favor digite uma nota que seja entre 0 e 10!!")
         break
-    elif nota2 > 10:
+    nota2 = float(input("Digite sua segunda nota: "))
+    if nota2 > 10:
         print("Por favor digite uma nota entre 0 e 10")
         break
     media = mediax(nota1,nota2)
@@ -29,3 +29,5 @@ while( a != 'fim'):
         print("Reprovado")
     if input('para sair digite (f) para continuar (enter): ') == 'f':
        break
+
+# Enjoy!
